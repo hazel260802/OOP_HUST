@@ -1,0 +1,8 @@
+Lab 03: Basic Object-Oriented Techniques
+3.	Passing parameter 
+	To test whether a programming language is passing by value or passing by reference, we usually use the swap method. This method aims to swap an object to another object. 
+		●	After the call of swap(jungleDVD, cinderellaDVD) why does the title of these two objects still remain?
+			Do truyền tham trị nên nó tạo ra một bản sao cùng tham chiếu đến giá trị đó. 
+			=> Do đó, khi thay đổi giá trị thay đổi là bản sao, bản chính vẫn giữ nguyên giá trị.
+		●	After the call of changeTitle(jungleDVD, cinderellaDVD.getTitle()) why is the title of the JungleDVD changed?
+			Thông tin được thay đổi thông qua setter&getter, thì sẽ thay đổi được giá trị trên Heap
